@@ -1,0 +1,26 @@
+
+// -------------------------------------------------------
+//         EVALUATION OF THE BESSEL FUNCTION
+// ------------------------------------------------------
+
+INPUTS ; 
+x = the value of the varaible in the Bessel function
+n = power of x/2 in the Bessel function
+tol = tolerance of the error in the Bessel power expansion
+
+// -------------------------------------------------------
+// 		DESCRIPTION
+// -------------------------------------------------------
+
+the computation of the Bessel term has been divided in three
+parts:
+(x/2)^n/n! =(x/2)/1 * (x/2)/2 * .... * (x/2)/n
+(x/2)^m/m! =(x/2)/1 * (x/2)/2 * .... * (x/2)/m
+(x/2)^m/   =(x/2)/(n+1) * (x/2)/(n+2) * ...* (x/2)/(n+m)
+
+// --------------------------------------------------------
+// 		OUPUTS
+// --------------------------------------------------------
+m = number of summands in the power expansion with the requiered precision
+tol = tolerance requiered
+value = value of the Bessel function.
